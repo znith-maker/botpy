@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-link = input('Enter Url: ')
 user = input('Enter Username: ')
 pasw = input('Enter password: ')
 
@@ -15,7 +14,7 @@ class InstaBot:
 
 	def login(self):
 		bot = self.bot
-		bot.get(link)
+		bot.get(https://www.instagram.com/)
 		time.sleep(6)
 		email = bot.find_element_by_id('username')
 		password = bot.find_element_by_id('password')
