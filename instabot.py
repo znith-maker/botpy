@@ -16,8 +16,8 @@ class InstaBot:
 		bot = self.bot
 		bot.get(https://www.instagram.com/)
 		time.sleep(6)
-		email = bot.find_element_by_id('username')
-		password = bot.find_element_by_id('password')
+		email = bot.find_element_by_name('username')
+		password = bot.find_element_by_name('password')
 		# submit = bot.find_element_by_id('submit')
 		email.clear()
 		password.clear()
